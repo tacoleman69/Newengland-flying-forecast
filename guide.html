@@ -1,0 +1,102 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>How to read the New England Flying Forecast</title>
+<link rel='icon' type='image/svg+xml' href='icon.svg'><style>
+body{font-family:-apple-system,Segoe UI,Arial,sans-serif;margin:0;background:#f6f7f9;color:#1d2329;font-size:15px;line-height:1.45}
+header{background:#14261D;color:#FDEBD3;padding:12px 18px;display:flex;align-items:center;gap:14px}
+header img{width:56px;height:56px} header h1{margin:0;font-size:24px}
+header a{margin-left:auto;color:#FDEBD3;border:1px solid #FDEBD3;border-radius:6px;padding:6px 12px;text-decoration:none;font-size:14px}
+main{max-width:860px;margin:auto;padding:8px 18px 40px}
+section{background:#fff;border-radius:10px;box-shadow:0 1px 3px #0002;padding:16px 20px;margin:16px 0}
+h2{margin:0 0 10px;font-size:19px}
+p{margin:0 0 8px}
+.ex{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}
+.box{width:170px;border-radius:8px;padding:8px;text-align:center;background:#2e9e4433;border:2px solid #2e9e44;font-size:13px}
+.box div{position:relative;padding:2px 0}
+.n{display:inline-block;width:20px;height:20px;border-radius:50%;background:#14261D;color:#fff;font-size:12px;font-weight:700;line-height:20px;text-align:center;margin-right:6px;flex:none}
+.box .n{position:absolute;left:-30px;top:2px}
+.list{flex:1 1 360px;list-style:none;margin:0;padding:0}
+.list li{display:flex;margin:0 0 9px}
+.row{display:flex;align-items:center;gap:10px;margin:6px 0}
+.sw{min-width:92px;text-align:center;border-radius:5px;padding:3px 8px;font-weight:700;font-size:13px}
+.meter{height:9px;width:120px;background:#e5e7eb;border-radius:5px;overflow:hidden;flex:none}
+.meter div{height:100%}
+.gbar{display:grid;grid-template-columns:5fr 2fr 3fr 4fr;border-radius:6px;overflow:hidden;font-size:12px;font-weight:700;color:#fff;text-align:center;margin:6px 0 4px}
+.gbar div{padding:5px 0}
+.stripe{background:repeating-linear-gradient(45deg,#fff,#fff 6px,#fde2e2 6px,#fde2e2 12px);border:2px solid #9aa0a6}
+</style></head><body>
+<header><img src='logo.svg' alt=''><h1>How to read this forecast</h1><a href='index.html'>Back to forecast</a></header>
+<main>
+
+<section><h2>One day box</h2>
+<p>Every site gets one box per day. Here's what each line means.</p>
+<div class='ex'>
+<div class='box' style='margin-left:30px'>
+<div style='font-size:20px;font-weight:700'><span class='n'>1</span>2.95</div>
+<div><span class='n'>2</span>Leave work - go fly</div>
+<div><span class='n'>3</span>NW 6 mph</div>
+<div><span class='n'>4</span>TOL 6,200 ft</div>
+<div><span class='n'>5</span><span style='background:#2e7d32;color:#fff;border-radius:4px;padding:0 5px;font-weight:700'>B/S 11</span> smooth</div>
+<div style='color:#8b1a1a;font-size:12px'><span class='n'>6</span>Overdevelopment risk</div>
+<div><span class='n'>7</span><div class='meter' style='margin:4px auto 0'><div style='width:85%;background:hsl(102,75%,42%)'></div></div>models agree 85%</div>
+</div>
+<ol class='list'>
+<li><span class='n'>1</span><span><b>Lapse rate</b> - how fast the air cools as you climb. Higher = stronger thermals.</span></li>
+<li><span class='n'>2</span><span><b>The call</b> - what that number means (see the scale below).</span></li>
+<li><span class='n'>3</span><span><b>Wind at launch height</b> - direction it comes from and speed in mph, late morning to afternoon.</span></li>
+<li><span class='n'>4</span><span><b>Top of lift</b> - how high thermals should take you, in feet above the valley.</span></li>
+<li><span class='n'>5</span><span><b>Turbulence (B/S)</b> - green is smooth, red is rough (see below).</span></li>
+<li><span class='n'>6</span><span><b>Warnings</b> in red - wrong wind direction, too windy, rain, storms.</span></li>
+<li><span class='n'>7</span><span><b>Models agree</b> - how much the weather models agree. Green = confident, red = unsure.</span></li>
+</ol></div></section>
+
+<section><h2>Lapse rate</h2>
+<p>(ground temp - temp at top of lift) / top of lift in thousands of feet.</p>
+<div class='row'><span class='sw' style='background:#2e9e4455'>2.8 +</span><span>Leave work - go fly <i style='color:#6b7280'>(Call in to work and tell them your grandmother died. Again.)</i></span></div>
+<div class='row'><span class='sw' style='background:#e8c21a55'>2.4 - 2.8</span>Pretty good - could still be a very good day</div>
+<div class='row'><span class='sw' style='background:#f08a2455'>2.0 - 2.4</span>Stay at work</div>
+<div class='row'><span class='sw' style='background:#9aa0a655'>under 2.0</span>Stay home</div>
+<div class='row'><span class='sw' style='background:#c7cbd155'>-</span>No usable lift</div>
+</section>
+
+<section><h2>Turbulence: the B/S number</h2>
+<p>Compares how strong the thermals are with how much the wind changes as you climb.
+Strong thermals in light, even wind = high number = smooth. Wind that tears thermals apart = low number = rough.</p>
+<div class='gbar'><div style='background:#c62828'>0-5</div><div style='background:#e08a00'>5-7</div>
+<div style='background:#7cb342'>7-10</div><div style='background:#2e7d32'>10+</div></div>
+<div class='row'><span class='sw' style='background:#c62828;color:#fff'>0-5</span><span><b>Turbulent.</b> Broken, punchy lift that's hard to stay in.</span></div>
+<div class='row'><span class='sw' style='background:#e08a00;color:#fff'>5-7</span><span><b>Some shear.</b> Workable but bumpy.</span></div>
+<div class='row'><span class='sw' style='background:#7cb342;color:#fff'>7-10</span><span><b>Good.</b> Thermals hold together.</span></div>
+<div class='row'><span class='sw' style='background:#2e7d32;color:#fff'>10+</span><span><b>Smooth.</b> Round, easy thermals.</span></div>
+</section>
+
+<section><h2>Models agree</h2>
+<p>The app checks six weather models. When they all tell the same story, trust the forecast more.</p>
+<div class='row'><div class='meter'><div style='width:90%;background:hsl(108,75%,42%)'></div></div>Green - models agree</div>
+<div class='row'><div class='meter'><div style='width:55%;background:hsl(66,75%,42%)'></div></div>Yellow - some disagreement</div>
+<div class='row'><div class='meter'><div style='width:20%;background:hsl(24,75%,42%)'></div></div>Red - models disagree, low confidence</div>
+</section>
+
+<section><h2>Wind at launch</h2>
+<div class='row'><span class='sw' style='background:#e5e7eb'>0-3 mph</span>Light</div>
+<div class='row'><span class='sw' style='background:#2e9e4433'>3-8 mph</span>Good</div>
+<div class='row'><span class='sw' style='background:#e8c21a55'>8-12 mph</span>Strong - flagged</div>
+<div class='row'><span class='sw' style='background:#c6282833'>over 12 mph</span>Too windy</div>
+<p style='margin-top:8px'>Each site also has its own good wind directions. Mt Tom has a lower limit (5-8 mph) because of the cliff.</p>
+</section>
+
+<section><h2>Coastal soaring sites (Wellfleet)</h2>
+<p>Wellfleet on Cape Cod is dune soaring, not thermal flying, so it doesn't use the lapse rate. Instead the box shows how many hours, sunrise to sunset, the wind is the right direction (almost due east) and speed:</p>
+<div class='row'><span class='sw' style='background:#2e9e4455;min-width:92px'>Soar - full wing</span>6-15 mph for full-size wings.</div>
+<div class='row'><span class='sw' style='background:#e8c21a55;min-width:92px'>Soar - mini wing</span>15-20 mph for mini wings and parakites.</div>
+<p>It needs at least 2 hours in a row to count. The time under the wind is the best soaring window. Season is November to April; outside that it's shown as Out of season.</p>
+</section>
+
+<section><h2>Striped boxes and site order</h2>
+<div class='row'><span class='sw stripe' style='min-width:92px'>&nbsp;</span>Striped = not flyable that day (wind or rain). Still shown so you can go check.</div>
+<p style='margin-top:8px'>Sites are sorted best to worst: sites with a flyable day this week come first, then by lapse rate. <b>#1</b> is the top pick. A gray number means that site has no flyable day this week.</p>
+<p>Small red tags in a box say why a day fails, e.g. <i>Wrong wind</i>, <i>Too windy</i>, <i>Rain</i>. Open the site's details for the full story.</p>
+<p>Days 5-7 are shown lighter: forecasts that far out are much less reliable. The numbers are calculated the same way.</p>
+</section>
+
+</main></body></html>
